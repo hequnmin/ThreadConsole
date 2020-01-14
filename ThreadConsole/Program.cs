@@ -22,10 +22,10 @@ namespace ThreadConsole
 
             //默认地址为127.0.0.1
             IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-            TcpListener tcpListener = new TcpListener(ipAddress, 502);
+            TcpListener tcpListener = new TcpListener(ipAddress, 501);
             tcpListener.Start();
 
-            Console.WriteLine($"Listener: 127.0.0.1:502");
+            Console.WriteLine($"Listener: 127.0.0.1:501");
             Console.WriteLine();
 
             //以一个死循环来实现监听
